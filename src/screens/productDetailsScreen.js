@@ -19,12 +19,12 @@ const ProductDetailsScreen = () => {
             <FlatList
             data={product.images}
             renderItem={({item}) => (
-           
-                 <Image source={{uri: item}} 
+            
+                <Image source={{uri: item}} 
                 style={{width, aspectRatio:1}}
                 />
-              
-             
+            
+            
             )}
             horizontal
             showsHorizontalScrollIndicator={false}
@@ -40,7 +40,7 @@ const ProductDetailsScreen = () => {
             <Pressable style={styles.button} onPress={addToCart}>
                 <Text style={styles.buttonText}>Add to Cart</Text>
             </Pressable>
-          
+            
         </View>
     )
 }
